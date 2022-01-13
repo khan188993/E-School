@@ -1,0 +1,360 @@
+/*
+  Theme Name: E-School Shop
+  Author: Md Arfan Khan
+  Support: a.k188993@gmail.com
+  Description: Creative  HTML5 template.
+  Version: 1.0
+*/
+/* CSS Index
+-----------------------------------
+1. Theme default css
+2. header
+3. slider
+4. about-area
+5. features-box
+6. department
+7. team
+8. video-area
+9. counter
+10. footer
+*/
+
+/* ========= Google Font Add ===========  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap");
+
+:root {
+  /* colors  */
+  --theme-color: #21b573;
+  --white: #ffffff;
+  --black: #000000;
+  --text-color: #353535;
+  --section: #f1f1f1;
+
+  /* fonts  */
+  --Poppins: "Poppins", sans-serif;
+}
+
+/* ========= Global CSS Part Start ===========  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box !important;
+  outline: none !important;
+}
+
+body {
+  font-family: var(--Poppins);
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+section {
+  padding: 100px 0;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #6c6b6b;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  color: #353535;
+  margin-top: 0px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: normal;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 70px;
+  color: black;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #413960;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+input,
+textarea,
+button {
+  outline: none;
+}
+
+.myfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  width: 0%;
+  height: 0%;
+}
+
+a,
+.button {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s !important;
+}
+
+a {
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+button {
+  outline: none !important;
+}
+
+.main-btn {
+  font-size: 13px;
+  margin: 0;
+  padding: 17px 48px;
+  border: 3px solid var(--theme-color);
+  color: white;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  background: var(--theme-color);
+  border-radius: 30px;
+}
+
+.main-btn:hover {
+  background-color: transparent;
+  color: var(--theme-color);
+}
+
+.sectionHeading {
+  font-size: 36px;
+  color: #413960;
+  font-weight: 700;
+}
+
+/* ============Scroll Up Button============*/
+/* 
+.scroll-up-btn{
+  position: fixed;
+  height: 45px;
+  width: 42px;
+  background: var(--green);
+  right: 30px;
+  bottom: 10px;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  z-index: 9999;
+  font-size: 30px;
+  border-radius: 6px;
+  border-bottom-width: 2px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+  bottom: 30px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.scroll-up-btn:hover{background: black;} */
+/* ============res nav============*/
+/* .menu-btn i {
+  color: black;
+  font-size: 22px;
+} */
+/* ============header============*/
+
+header {
+  background: #f0fff0;
+  padding: 25px 0px;
+}
+
+.logo {
+  width: 215px;
+}
+
+#header .row {
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  margin-left: 76px;
+}
+
+nav ul li a {
+  display: block;
+  color: black;
+}
+nav ul li a:hover {
+  color: black;
+}
+
+/* ========= Hero section ===========  */
+#hero {
+  background: #f0fff0;
+}
+
+#hero .hero-text span {
+  color: #fd511a;
+}
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 70px;
+  color: black;
+}
+#hero .hero-text h1 span {
+  color: var(--theme-color);
+}
+.hero-text h1 {
+  margin: 25px 0;
+}
+.hero-text p {
+  margin-bottom: 45px;
+  padding-right: 164px;
+}
+
+/* ========= Information section ===========  */
+
+#information {
+	padding: 50px 0;
+}
+
+#information .single-info {
+  text-align: center;
+  background: #f7fffb;
+  padding: 55px 0;
+  transition: 0.3s;
+  border-radius: 15px;
+}
+.single-info img {
+  display: inline-block;
+  width: 75px;
+}
+
+.single-info span {
+  color: #585859;
+}
+.single-info h2 {
+  margin: 28px 0 10px;
+}
+
+#information .single-info:hover {
+  background: #ffffff;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ========= Online Course ===========  */
+.single-course .img {
+  width: 331px;
+  height: 234px;
+  border-radius: 11px;
+}
+
+.bg-1{
+  background:url(./images/Photos/Morder-psyc.png) no-repeat center;
+  background-size: cover;
+}
+.bg-2{
+  background:url(./images/Photos/Morder-pychons.png) no-repeat center;
+  background-size: cover;
+}
+.bg-3{
+  background:url(./images/Photos/Morder-pyschology.png) no-repeat center;
+  background-size: cover;
+}
+
+.single-course h2 {
+  margin: 20px 0;
+}
+.single-course span {
+  display: block;
+  margin-bottom: 30px;
+}
+.single-course .main-btn {
+  padding: 9px 25px;
+  text-transform: uppercase;
+}
+
+
+.date-and-seat {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 29px;
+}
+.single-course {
+  padding: 20px;
+}
+
+/* ========= Testimonial===========  */
+
+#testimonial .content {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+#testimonial .content img {
+  width: 14%;
+}
+#testimonial .content p {
+  width: 80%;
+  padding-left: 50px;
+  color: #000000;
+  font-weight: 500;
+}
+
+/* ========= Footer section ===========  */
+
+#footer {
+  background: #000000;
+  color: #ffffff;
+  padding: 50px 0 30px 0;
+}
+#footer p,#footer a,#footer h5 {
+  color: #ffffffd6;
+}
+
+.f-link .title {
+  font-weight: 600;
+}
+.f-link li {
+  margin-bottom: 11px;
+}
+
+#footer h5 {
+  font-size: 16px;
+  color: #cdcdcd;
+  margin-top: 85px;
+}
+
+/* ============The End============*/

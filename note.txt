@@ -1,0 +1,2 @@
+*)font family,
+*)common h1,p, color,margin, padding, section
